@@ -1,0 +1,144 @@
+
+.PostWrap {
+background-color: white;
+margin-bottom: 10px;
+border: 2px solid grey;
+border-radius: 30px;
+}
+
+
+.HeaderContainer {
+  
+position: relative;
+display: flex;
+align-items: center;
+gap: 10px;
+margin-bottom: 20px;
+padding: 10px;}
+.HeaderContainer > img {
+  object-fit: contain;
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.HeaderContainer > p {
+  flex: 1;
+  font-size: 15px;
+  cursor: pointer;
+  font-weight: 200;
+}
+.DotsOptions{
+position: absolute;
+background-color: #fff;
+border: 0.5px solid grey;
+box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+padding: 10px;
+right: 20px; 
+top: 50px;}
+.DotsOptions > li {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  gap: 10px;
+  padding: 3px;
+  cursor: pointer;
+}
+
+.PostCoverPhoto{ 
+object-fit: contain;
+width: 90%;
+align-items: center;
+padding: 20px;
+margin-left: 20px;
+
+
+}
+
+.PostOptions {
+display: flex;
+justify-content: space-between;
+align-items: center;
+color: #000;
+width: 100%;
+
+}
+
+.CommentsContainer {
+max-height: 70px;
+overflow-y: auto;
+overflow-x: hidden;
+padding: 10px;
+margin-left: 35px;
+display: flex;
+flex-direction: column;
+gap: 10px;
+margin-right: 5px;}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  background: white;
+}
+::-webkit-scrollbar-thumb {
+  background: grey;
+}
+
+.CommentWrapper {
+display: flex;
+align-items: center;
+justify-content: space-between;
+gap: 15px;}
+.CommentWrapper > div > img {
+  object-fit: contain;
+  height: 30px;
+  border-radius: 9999px;
+}
+.CommentWrapper > div > p {
+  color: #2d3748;
+  font-size: 15px;
+  height: 20px;
+  overflow: initial;
+  white-space: initial;
+  text-overflow: initial;
+  width: 150px;
+
+  @media (min-width: 750px) {
+    width: 250px;
+  }
+}
+.CommentWrapper > p {
+  min-width: 50px;
+  height: 18px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: initial;
+  @media (min-width: 750px) {
+    width: auto;
+  }
+}
+.AddCommentContainer {
+border-top: 1px solid #e2e8f0;
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 10px;
+color: gray;}
+
+.AddCommentContainer > div {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.AddCommentContainer> div > form > input {
+  border: 0px;
+  font-size: 15px;
+  flex: 1;}
+.AddCommentContainer> div > form > input:focus {
+    outline: none;
+  }
+.AddCommentContainer > div > form > button {
+  display: none;
+  cursor: pointer;
+}
